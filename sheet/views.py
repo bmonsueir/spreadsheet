@@ -1,3 +1,11 @@
 from django.shortcuts import render
 
-# Create your views here.
+def home(request):
+    return render(request, 'sheet/index.html')
+    
+    
+def save_book(request, data):
+    
+    
+    
+    return render(request, 'sheet/index.html')
