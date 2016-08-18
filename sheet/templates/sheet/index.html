@@ -6,7 +6,9 @@
   {% load staticfiles %}
   <link rel="stylesheet" type="text/css" href="{% static 'slickgrid/slick.grid.css' %}"/>
   <link rel="stylesheet" type="text/css" href="{% static 'slickgrid/css/smoothness/jquery-ui-1.8.16.custom.css' %}"/>
- <link rel="stylesheet" href="{% static 'slickgrid/examples/examples.css' %}" type="text/css"/>
+  <link rel="stylesheet" href="{% static 'slickgrid/examples/examples.css' %}" type="text/css"/>
+   
+  
   <style>
     .cell-title {
       font-weight: bold;
@@ -17,28 +19,32 @@
   </style>
 </head>
 <body>
-<div style="position:relative">
-  <div style="width:100%;">
-    <div id="myGrid" style="width:90%;height:800px;"></div>
+  
+  
+  <div style="position:relative" id = "outerDiv" >
+    <div style="width:100%;">
+      <div id="myGrid" style="width:90%;height:800px;"></div>
+    </div>
   </div>
 
+
+  <script src="{% static 'slickgrid/lib/firebugx.js' %}"></script>
   
-</div>
+  <script src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui-1.12.0.custom/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'slickgrid/lib/jquery.event.drag-2.2.js' %}"></script>
+  
+  <script src="{% static 'slickgrid/slick.core.js' %}"></script>
+  <script src="{% static 'slickgrid/plugins/slick.cellrangedecorator.js' %}"></script>
+  <script src="{% static 'slickgrid/plugins/slick.cellrangeselector.js' %}"></script>
+  <script src="{% static 'slickgrid/plugins/slick.cellselectionmodel.js' %}"></script>
+  <script src="{% static 'slickgrid/slick.formatters.js' %}"></script>
+  <script src="{% static 'slickgrid/slick.editors.js' %}"></script>
+  <script src="{% static 'slickgrid/slick.grid.js' %}"></script>
+  
+  <script src="{% static 'js/index.js' %}"></script>
+ 
 
-<script src="{% static 'slickgrid/lib/firebugx.js' %}"></script>
 
-<script src="{% static 'slickgrid/lib/jquery-1.7.min.js' %}"></script>
-<script src="{% static 'slickgrid/lib/jquery-ui-1.8.16.custom.min.js' %}"></script>
-<script src="{% static 'slickgrid/lib/jquery.event.drag-2.2.js' %}"></script>
-
-<script src="{% static 'slickgrid/slick.core.js' %}"></script>
-<script src="{% static 'slickgrid/plugins/slick.cellrangedecorator.js' %}"></script>
-<script src="{% static 'slickgrid/plugins/slick.cellrangeselector.js' %}"></script>
-<script src="{% static 'slickgrid/plugins/slick.cellselectionmodel.js' %}"></script>
-<script src="{% static 'slickgrid/slick.formatters.js' %}"></script>
-<script src="{% static 'slickgrid/slick.editors.js' %}"></script>
-<script src="{% static 'slickgrid/slick.grid.js' %}"></script>
-
-<script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 insert_menu_markup();
 insert_grid_markup();
-//make_grid_component();
+make_grid_component();
 add_new_tab();
+//insert_open_dialog_markup();
+//make_open_dialog();
 
 
   function requiredFieldValidator(value) {
@@ -52,16 +54,16 @@ add_new_tab();
     });
   })
   function insert_menu_markup(){
-    $("body").prepend(
+    $("#outerDiv").prepend(
       '<input type = "text" id = "book" name = "book" value = "">');
-    $("body").prepend('<input type = "button" id = "save" value = "save">');  
-    $("body").prepend('<input type = "button" id = "open" value = "open">');
-    $("body").prepend('<input type = "button" id = "new" value = "new">');
+    $("#outerDiv").prepend('<input type = "button" id = "save" value = "save">');  
+    $("#outerDiv").prepend('<input type = "button" id = "open" value = "open">');
+    $("#outerDiv").prepend('<input type = "button" id = "new" value = "new">');
   }
   
   function insert_grid_markup(){
       var work_book = '<div id = "tabs" class = "tabs-bottom"><ul><li></li></ul></div>';
-      $('body').append(work_book);
+      $('#outerDiv').append(work_book);
       
   }
   
@@ -73,6 +75,6 @@ add_new_tab();
   }
   
   function add_new_tab(){
-     $('body').append('<input id = "new_tab_button" type = "button" value = "+" />');
+     $('#outerDiv').append('<input id = "new_tab_button" type = "button" value = "+" />');
       
   }

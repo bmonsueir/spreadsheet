@@ -8,6 +8,7 @@ from datetime import datetime
 class Workbook(models.Model):
     book = models.CharField( max_length=255,)
     tab = models.CharField( max_length=255, )
+    header = models.CharField(max_length=255,)
     functions = models.CharField(max_length=255, )
     data = models.TextField(max_length=255, )
     updatedBy = models.CharField(max_length=255, )
