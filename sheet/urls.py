@@ -5,5 +5,8 @@ from . import views
 from django.conf import settings
 
 urlpatterns = [
-    url(r'^$', views.home, name = 'home'),
+    
+    url(r'^$', views.index, name = 'index'),
     ]
+    
+    #url(r'^$', views.home, name = 'home'),
